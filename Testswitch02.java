@@ -1,11 +1,9 @@
 package demo02_switch;
 
-public class Test {
+public class Testswitch02 {
     public static void main(String[] args) {
-        int i = 8;
-        //星期一到星期日期1，2，3，4，5，6，7
-        //
-
+        int i = 2;
+        //星期一到星期日期1，2，3，4，5，6，7//
         switch (i){
             case 1 :
                 System.out.println("Monday");
@@ -16,7 +14,7 @@ public class Test {
         break;
         case 3 :
         System.out.println("Thursday");
-break;
+        break;
         case 4 :
         System.out.println("Wednesday");
         break;
@@ -30,8 +28,6 @@ break;
         case 7 :
         System.out.println("Sunday");
         break;
-            default:
-                System.out.println("不认识这个日期");
     }
     }
 }
