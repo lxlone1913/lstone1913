@@ -1,37 +1,74 @@
-package demo02_switch;
+package Demo001;
+class Teacher{
+  private String  Name;
+      private int   Age;
+      private  String Gender;
 
+    public Teacher() {
+    }
+
+    public Teacher(String name, int age, String gender) {
+        Name = name;
+        Age = age;
+        Gender = gender;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int age) {
+        Age = age;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
+    }
+    public void ShowInfo(){
+        System.out.println("name:"+getName());
+        System.out.println("name:"+getAge());
+        System.out.println("name:"+getGender());
+
+    }
+
+
+
+
+}
 public class Test {
     public static void main(String[] args) {
-        int i = 8;
-        //星期一到星期日期1，2，3，4，5，6，7
-        //
 
-        switch (i){
-            case 1 :
-                System.out.println("Monday");
-                break;
-
-        case 2 :
-        System.out.println("Tuseday");
-        break;
-        case 3 :
-        System.out.println("Thursday");
-break;
-        case 4 :
-        System.out.println("Wednesday");
-        break;
-        case 5 :
-        System.out.println("Friday");
-        break;
-
-        case 6 :
-        System.out.println("Saturday");
-        break;
-        case 7 :
-        System.out.println("Sunday");
-        break;
-            default:
-                System.out.println("不认识这个日期");
+        Teacher t= new Teacher();
+        t.setAge(78);
+        t.getAge();
+        t.setName("ddd");
+         t.getName();
+         t.setGender("man");
+         t.getGender();
+t.ShowInfo();
     }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
