@@ -1,35 +1,17 @@
-    package Demo005;
-
-
-import java.io.FileNotFoundException;
+package Demo04;
 
 public class Test {
-
-    static void f1(){
-        f2();
-    }
-    static void f2(){
-        f3();
-    }
-    static void f3(){
-        System.out.println(8/0);
-    }
-
-
-
-
-
-
     public static void main(String[] args) {
-        try {
-            f1();
-        }catch (Exception e){
-        e.printStackTrace();
-            System.out.println(e);
-            System.out.println(e.getMessage());
-        }
-
+        int i =3;
+        //定义一个小盒子，类型是整形
+        //对象实际上是一个复杂的数据
+        //类实际上是一个复杂的数据类型
+        Dog d =new Dog();
+        //创建一个小盒子，叫d，类型是Dog,数据是new dog
+        d.name ="旺财";
+                d.colour="黄色";
+                d.ishungry=false;
+        d.wangwangjiao();
 
     }
 }
-
