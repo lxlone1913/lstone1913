@@ -1,30 +1,32 @@
-package Demo003;
+package Demo004;
 
-import java.util.Arrays;
+import java.io.FileNotFoundException;
 
 public class Test {
-    public static void main(String[] args) {
-        String s = null;
 
-           try {
-               char c =s.charAt(0);
-           }catch (Exception e){
-        System.out.println("c");}
-
-        System.out.println("hello");
-        System.out.println(100);
-        System.out.println(12345678901230L);
-        System.out.println(123444);
-        System.out.println("args = " + Arrays.deepToString(args));
-        System.out.println("6");
-        System.out.println(true);
-        System.out.println(true);
-        System.out.println("qwr");
-        System.out.println(123);
-
+    static void f1()throws FileNotFoundException{
+        f2();
+    }
+    static void f2()throws FileNotFoundException{
+        f3();
+    }
+    static void f3()throws FileNotFoundException
+    {throw new FileNotFoundException();
     }
 
 
-    private static class Char {
+
+
+
+
+    public static void main(String[] args) {
+try {
+    f1();
+}catch (Exception e){
+    System.out.println("This is an error");
+}
+        {throw new RuntimeException();}
+
+
     }
 }
